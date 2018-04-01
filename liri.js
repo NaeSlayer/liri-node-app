@@ -3,16 +3,19 @@ var fs = require("fs");
 var keys = require("./keys.js");
 var Spotify = require("node-spotify-api");
 var Twitter = require("twitter");
-
+var request = require("request");
 
 var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
 
-
-var request = require("request");
-
 var command = process.argv[2];
 var input = process.argv[3];
+
+if (!command) {
+    console.log("Welcome to LIRI! \nLIRI is a Language Interpretation and Recognition Interface. \nLIRI will display tweets or search for movies or songs. \nEnter 'my-tweets' to display Tweets \nEnter'spotify-this-song' and 'song name' to display songs \nEnter 'movie-this' and 'movie-title' to display movies")
+
+}
+
 
 // The switch-case will direct which function gets run.
 switch (command) {
@@ -84,8 +87,6 @@ function spotifyThis(input) {
                 "Album Name": song.album.name,
                 "Preview Link": song.preview_url
             })
-            // console.log(data.tracks);
-            console.log("<-------------------------------------------->");
             console.log("Artist: " + song.artists[0].name);
             console.log("Song Name: " + song.name);
             console.log("Album Name: " + song.album.name);
