@@ -1,3 +1,16 @@
+// # Spotify API keys
+
+// SPOTIFY_ID = 22f53861d1514ef389035dd4103044b0
+// SPOTIFY_SECRET = 4bad6d8a6c3f42f2ad829cb4dcf5c323
+
+// # Twitter API keys
+
+// TWITTER_CONSUMER_KEY = ELsuKXwwPewn4QIRvTTWkTbuB
+// TWITTER_CONSUMER_SECRET = qLDXoBqY2M5YvGnh8Xj0VtVdJc2z77k8vZiSdboy2PxjUk59ra
+// TWITTER_ACCESS_TOKEN_KEY = 979187793845825537 - KiFIRhAMB8vXhyl9RRizAdzgw5TdFVi
+// TWITTER_ACCESS_TOKEN_SECRET = urAZCsVPaHY5HrPyiv7yGPpXjEwFgHeoB2sFvtWIYNZRy
+
+
 // setting up require functions for node.js packages
 
 require("dotenv").config();
